@@ -1,0 +1,141 @@
+/* CONSTANTS */
+
+:root {
+    --width-sidebar: 25vw;
+    --width-main: calc(100vw - var(--width-sidebar));
+    --color-blue: rgb(25, 146, 212);
+    --color-gray: rgb(226, 232, 240);
+    --num-items-sidebar: 12;
+    --grid-item-height-sidebar: calc(100vh / var(--num-items-sidebar) - 32px);
+    --padding-header: 16px 32px;
+}
+
+/* CSS RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    letter-spacing: .04em;
+    line-height: 21px;
+}
+
+button {
+    border-style: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-height: 100%;
+    width: auto;
+}
+
+input {
+    outline: none;
+    border-style: none;
+    letter-spacing: 0;
+    padding: 0px 20px;
+}
+
+/* SIGN UP CSS */
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    /* TODO: remove below */
+    background-color: red;
+}
+
+img {
+    min-height: 30px;
+    height: 30px;
+    width: auto;
+}
+
+#dashboard-icon {
+    height: 40px;
+    width: auto;
+}
+
+.sidebar {
+    display: grid;
+    grid-template: repeat(12, 50px) / 20% 80%;
+    background-color: var(--color-blue);
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    align-items: center;
+}
+
+.blank {
+    grid-column: span 2;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    /* TODO: remove below */
+    background-color: black;
+}
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: var(--padding-header);
+    /* padding: 16px 32px; */
+    background-color: yellow;
+    gap: 20px;
+}
+
+input {
+    flex: 0.8;
+    background-color: var(--color-gray);
+    border-radius: 30px;
+    height: 32px;
+    margin-right: auto;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.account {
+    display: flex;
+    background-color: purple;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+}
+
+.account > button {
+    background-color: pink;
+    height: 40px;
+    width: 10
+}
+
+.content {
+    /* TODO: remove below */
+    background-color: green;
+}
