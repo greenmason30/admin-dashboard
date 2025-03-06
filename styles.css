@@ -7,7 +7,7 @@
     --color-gray: rgb(226, 232, 240);
     --num-items-sidebar: 12;
     --grid-item-height-sidebar: calc(100vh / var(--num-items-sidebar) - 32px);
-    --padding-header: 16px 32px;
+    --padding-header: 25px 50px;
 }
 
 /* CSS RESET */
@@ -30,6 +30,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 button {
     border-style: none;
+    letter-spacing: .04em;
 }
 
 ol, ul {
@@ -44,7 +45,7 @@ img {
 input {
     outline: none;
     border-style: none;
-    letter-spacing: 0;
+    letter-spacing: .04em;
     padding: 0px 20px;
 }
 
@@ -102,8 +103,7 @@ img {
     display: flex;
     align-items: center;
     padding: var(--padding-header);
-    /* padding: 16px 32px; */
-    background-color: yellow;
+    background-color: white;
     gap: 20px;
 }
 
@@ -121,18 +121,37 @@ input {
 
 .account {
     display: flex;
-    background-color: purple;
+    align-items: center;
+    padding: var(--padding-header);
+    background-color: white;
+    gap: 20px;
+}
+
+.account > .profile-pic {
+    min-height: 50px;
+    height: 50px;
+    width: auto;
 }
 
 .hello {
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+}
+
+.bigger {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .account > button {
-    background-color: pink;
+    font-size:medium;
     height: 40px;
-    width: 10
+    width: 120px;
+    border-radius: 30px;
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: bolder;
 }
 
 .content {
